@@ -1,0 +1,24 @@
+name: clip_process
+info:
+  process_module: clip_proc.py
+  network_module: clip_net.py
+  dataset_module: flickr8kcaption_dataset.py
+  description: >
+    Implement the CLIP model using Flickr8k dataset 
+
+parameters:
+  num_workers: 4
+  num_epochs: 4
+  image_encoder_lr: 1.e-4
+  text_encoder_lr: 1.e-5
+  projection_lr: 1.e-3
+  weight_decay: 1.e-3
+  temperature: 1.0
+  scheduler_patience: 1
+  scheduler_factor: 0.4
+  batch_size: 32
+  pretrained_model_file:
+  data_csv_file: ../flickr8k/captions.txt
+  image_folder: ../flickr8k/Images
+
+

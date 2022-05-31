@@ -1,0 +1,12 @@
+[flake8]
+max-line-length = 127
+max-complexity = 17
+per-file-ignores = 
+    test/test_filler.py:E402 F401
+    test/test_210525.py:E402 F401
+    test/test_210618.py:E402 F401
+    exp210826.py:F841
+    exp210826_flow.py:F841
+    experiments/exp210819_dramp_old.py:F841
+    experiments/exp210813_dramp_old.py: F841
+    
